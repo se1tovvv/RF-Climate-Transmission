@@ -61,7 +61,7 @@ void setup() {
     display.setTextColor(SSD1306_WHITE);
     display.println("OLED STATUS: OK");
     display.display();
-    delay(2000);
+    delay(500);
   }
 
   if (!radio.begin()) {
@@ -79,7 +79,7 @@ void setup() {
     display.setCursor(25, 25);
     display.println("NRF STATUS: OK");
     display.display();
-    delay(2000);
+    delay(500);
   }
 
   radio.openWritingPipe(address);
@@ -94,7 +94,7 @@ void setup() {
   display.setCursor(20, 25);
   display.println("ALL SYSTEMS READY");
   display.display();
-  delay(2000);
+  delay(500);
 }
 
 void loop() {
