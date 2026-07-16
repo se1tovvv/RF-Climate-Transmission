@@ -1,4 +1,4 @@
-//rx side of multisensot wireless radio transmission with DHT + MQ2
+//rx side of multisensot wireless radio transmission
 #include <SPI.h>
 #include <RF24.h>
 #include <Adafruit_GFX.h>
