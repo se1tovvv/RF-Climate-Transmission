@@ -146,13 +146,7 @@ void loop() {
     display.print("DHT Reading Failed. Check Wiring!");
     display.display();
   }
-  if (millis() - lastPacketTime > 3000) {
-    display.clearDisplay();
-    display.setCursor(0, 0);
-    display.println("NO DATA FROM TX");
-    display.println("Check TX / NRF24");
-    display.display();
-  }
+
 
   delay(1000);
 }
