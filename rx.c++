@@ -47,7 +47,7 @@ void setup() {
   display.setCursor(0, 0);
   display.print("OLED initialized");
   display.display();
-  delay(1000);
+  delay(500);
 
 
   if (!radio.begin()) {
@@ -66,7 +66,7 @@ void setup() {
   display.setCursor(0, 0);
   display.print("NRF RX initialized");
   display.display();
-  delay(1000);
+  delay(500);
 }
 
 
@@ -78,6 +78,7 @@ void loop() {
     packetsCount++;
     lastPacketTime = millis();
 
+    //Serial debug
     Serial.print("Number of packets received:");
     Serial.println(packetsCount);
 
@@ -125,6 +126,7 @@ void loop() {
   }
   delay(1000);
 
+  //if you see error message here, make sure the TX is correctly wired and turned on.
   if (millis() - lastPacketTime > 3000) {
     display.clearDisplay();
     display.setCursor(0, 0);
