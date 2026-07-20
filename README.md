@@ -19,6 +19,8 @@ This project uses two separate ESP32 boards:
 
 Each board should have its **own battery and power switch**, allowing both devices to work wirelessly without a USB cable.
 
+Notice that MQ2 sensor can not provide exact propane or methane gas values, however can detect their presence.
+
 ---
 
 ## TX (Transmitter)
